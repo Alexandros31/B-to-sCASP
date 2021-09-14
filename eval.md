@@ -1177,10 +1177,10 @@ B Expression | 1st Run | 2nd Run | 3rd Run | Average
 ### Z3
 B Expression | 1st Run | 2nd Run | 3rd Run | Average
 --- | --- | --- | --- | ---
-`queens : 1..4 >-> 1..4 & !(q1,q2).(q1:1..4 & q2:2..4 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|127|127|124|126
-`queens : 1..5 >-> 1..5 & !(q1,q2).(q1:1..5 & q2:2..5 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|150|153|151|151
-`queens : 1..6 >-> 1..6 & !(q1,q2).(q1:1..6 & q2:2..6 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|317|324|314|
-`queens : 1..7 >-> 1..7 & !(q1,q2).(q1:1..7 & q2:2..7 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|993|953|1010|985
+`queens : 1..4 >-> 1..4 & !(q1,q2).(q1:1..4 & q2:2..4 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|256|296|295|282
+`queens : 1..5 >-> 1..5 & !(q1,q2).(q1:1..5 & q2:2..5 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|348|255|252|285
+`queens : 1..6 >-> 1..6 & !(q1,q2).(q1:1..6 & q2:2..6 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|1060|1022|1156|1081
+`queens : 1..7 >-> 1..7 & !(q1,q2).(q1:1..7 & q2:2..7 & q2>q1 => queens(q1)+(q2-q1) /= queens(q2) & queens(q1)+(q1-q2) /= queens(q2))`|1927|607|1252|1262
 
 ### s(CASP)
 B Expression | 1st Run | 2nd Run | 3rd Run | Average
